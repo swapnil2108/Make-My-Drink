@@ -1,0 +1,10 @@
+.top-nav{
+  background-color: #ee6e73;
+  color: white;
+  margin-bottom: 10px;
+}
+.randomDrinks{
+  background-color: #80cbc4;
+  color: white;
+  z-index: -1
+}

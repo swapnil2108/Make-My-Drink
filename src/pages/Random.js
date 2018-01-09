@@ -1,4 +1,3 @@
-
 import React from 'react';
 import ajax from 'superagent';
 
@@ -10,6 +9,7 @@ class Random extends React.Component<Props> {
   constructor(props: Object){
     super(props);
     this.state = {drinks: []};
+
   }
 
   componentWillMount():mixed{
@@ -24,38 +24,61 @@ class Random extends React.Component<Props> {
           });
         a++;
       }
-
-      // for(var i = 0;i <= this.state.drinks[0].length;i++){
-      //   console.log("hello");
-      //   console.log(this.state.drinks[0]);
-      // }
     }
 
     saveState(data){
       this.setState({drinks: data});
+      console.log(this.state.drinks);
     }
-    //
+
+
 
   render(){
     return(
-      <div className="slider">
-        {this.state.drinks.map((drink,index)=>{
-          return(<div key = {index}>
-            <p>{drink.strDrink}</p>
-            <img src={drink.strDrinkThumb}></img>}
-          </div>);
-        return(<div key = {index}>
-                <ul className="slides">
-                  <li>
-                    <img alt="" src={drink.strDrinkThumb}></img>
-                    <div className="caption center-align">
-                      <h3>This is our big Tagline!</h3>
-                      <h5 className="">{drink.strDrinkThumb}</h5>
-                    </div>
-                  </li>
-                </ul>
-              </div>);
-        })}
+      <div className="container-fluid randomDrinks">
+        <div className="row">
+          <div className="col-4">
+            <div className="carousel slide" data-ride="carousel">
+              <ol className="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div className="carousel-inner">
+                {this.state.drinks.map((drink,index)=>{
+                  if(index === 0){
+                    return(<div key={index} id = {index} className="carousel-item active">
+                      <img className= "d-block w-100" src = {drink.strDrinkThumb} alt={index}></img>
+                    </div>)
+                  }else{
+                    return(<div key={index} id = {index} className="carousel-item">
+                      <img className= "d-block w-100" src = {drink.strDrinkThumb} alt={index}></img>
+                    </div>)
+                  }
+                })}
+              </div>
+            </div>
+          </div>
+          <div className = "col-8 text-center">
+            <div className="carousel slide" data-ride="carousel">
+              <div className="carousel-inner">
+                {this.state.drinks.map((drink,index)=>{
+                  if(index === 0){
+                    return(<div key={index} id = {index} className="carousel-item active">
+                      <h1>{drink.strDrink}</h1>
+                      <h4>{drink.strAlcoholic}</h4>
+                    </div>)
+                  }else{
+                    return(<div key={index} id = {index} className="carousel-item">
+                      <h1>{drink.strDrink}</h1>
+                      <h4>{drink.strAlcoholic}</h4>
+                    </div>)
+                  }
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
 }
