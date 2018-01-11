@@ -9,10 +9,8 @@ class Header extends React.Component<Props> {
 
   render(){
     return(
-      <div className = "top-nav">
-        <div className = "container-fluid">
-          <div className = "row">
-            <div className = "col-12">
+          <div className = "row firstDiv">
+            <div className = "col-12  top-nav">
               <div className = "homeLogo text-left">
                 Make-My-Drink
               </div>
@@ -24,8 +22,6 @@ class Header extends React.Component<Props> {
               </div>
             </div>
           </div>
-        </div>
-      </div>
     );
   }
 }
