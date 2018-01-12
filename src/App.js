@@ -13,6 +13,9 @@ class App extends Component {
         <Intro/>
       <div className= "parallax"></div>
       <Random/>
+      <div className = "bottomImg text-center">
+        <h5 className = "bottomText">Check out the Database from the cocktailDB</h5>
+      </div>
       <Footer/>
     </div>
     );
