@@ -2,21 +2,26 @@
   /* margin-bottom: 10px; */
   /* position: fixed; */
   position: relative;
-  color: #fafafa;
-  /* background-color: #757575; */
-  opacity: 0.5;
-  height: 100% !important;
-
+    z-index: 1;
+    opacity: 1;
+    color: #f5f0f0;
+    height: 100% !important;
+    color: white;
+    text-transform: bold;
+    position: fixed;
 }
+
+/*  http://static3.businessinsider.com/image/5857f948dd0895bc1f8b4721/the-30-best-selling-cocktails-in-the-world-in-2016.jpg */
 .topImg{
-  background-image: url("https://typeset-beta.imgix.net/rehost/2016/9/13/ebd80ff3-289b-4b98-8a1e-26dddb260723.jpg");
+  background-image: url("https://www.rd.com/wp-content/uploads/2017/04/ft-8-Skinny-Summer-Cocktails-That-Wont-Bust-Your-Diet.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100% !important;
+  height: 900px !important;
   width:100% !important;
+  filter: brightness(50%);
 }
 .carousel-inner{
-  /* height:500px; */
+  height: 430px;
 }
 .firstDiv{
   height: 950px;
@@ -26,20 +31,30 @@
   padding-right: 0px !important;
 }
 .row{
-  margin-right: -15px !important;
-  margin-left: -30px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 .randomDrinks{
   /* display: block; */
 
   background-color: white;
-  border: 2px solid black;
 }
 .drinkName{
   font-family: 'Joti One', cursive;
 }
 .introLine{
   font-family: 'Libre Barcode 39 Extended Text', cursive;
+}
+.bottom-nav{
+  background-color: black;
+}
+.bottomImg{
+  background-image: url("https://www.fuchsfashion.ch/wp-content/uploads/2014/03/Apero-2014.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px !important;
+  width:100% !important;
+  /* filter: brightness(50%); */
 }
 .parallax {
     /* The image used */
@@ -54,10 +69,19 @@
 }
 .thumb{
   height: 200px;
-width: 200px;
+  width: 200px;
+}
+.carouselImg{
+  height: 400px !important;
+  width: 200px; !important;
+}
+.bottomText{
+  color:white;
+  filter: brightness(100%);
+  opacity: 1;
 }
 p{
-  padding: 10px;
+  padding: 20px;
   display: block;
   font-size: x-small;
 }
