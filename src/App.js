@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Header from './pages/Header';
 import Random from './pages/Random';
 import Footer from './pages/Footer';
-import Intro from './pages/Intro'
+import Intro from './pages/Intro';
+import About from './pages/About'
 class App extends Component {
   render() {
     return (
@@ -14,7 +15,7 @@ class App extends Component {
       <div className= "parallax"></div>
       <Random/>
       <div className = "bottomImg text-center">
-        <h5 className = "bottomText">Check out the Database from the cocktailDB</h5>
+        <About/>
       </div>
       <Footer/>
     </div>
