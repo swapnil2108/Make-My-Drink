@@ -10,15 +10,15 @@ class Header extends React.Component<Props> {
   render(){
     return(
           <div className = "row firstDiv">
-            <div className = "col-12  top-nav">
-              <div className = "homeLogo text-left">
-                Make-My-Drink
+            <div className = "col-12 top-nav">
+              <div className = "text-left">
+                <h6 className="topNavText">Make-My-Drink</h6>
               </div>
-              <div className = "about text-right">
-                About
+              <div className = "topNavText text-right">
+                <h6 className="topNavText">About</h6>
               </div>
-              <div className = "about text-right">
-                whats in my bar
+              <div className = "topNavText text-right">
+                <h6 className="topNavText">whats in my bar</h6>
               </div>
             </div>
           </div>
