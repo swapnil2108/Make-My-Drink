@@ -1,16 +1,28 @@
 .top-nav{
   /* margin-bottom: 10px; */
   /* position: fixed; */
-  position: relative;
+    /* position: relative;
     z-index: 1;
     opacity: 1;
     color: #f5f0f0;
     height: 100% !important;
     color: white;
     text-transform: bold;
-    position: fixed;
-}
+    position: fixed; */
 
+}
+.about{
+  width: 100%;
+  height: 40%;
+}
+.sticky{
+  width: 100%;
+  height:10%;
+  color: white;
+}
+.WIMB{
+  color: #007bff;
+}
 /*  http://static3.businessinsider.com/image/5857f948dd0895bc1f8b4721/the-30-best-selling-cocktails-in-the-world-in-2016.jpg */
 .topImg{
   background-image: url("https://www.rd.com/wp-content/uploads/2017/04/ft-8-Skinny-Summer-Cocktails-That-Wont-Bust-Your-Diet.jpg");
@@ -18,13 +30,19 @@
   background-size: cover;
   height: 900px !important;
   width:100% !important;
-  filter: brightness(50%);
+  filter: brightness(100%);
+}
+.topNavTextAbout{
+  color:white;
 }
 .carousel-inner{
   height: 430px;
 }
-.firstDiv{
+/* .firstDiv{
   height: 950px;
+} */
+.top-nav *{
+  display: inline-block;
 }
 .container-fluid{
   padding-left: 0px !important;
@@ -55,6 +73,12 @@
   height: 900px !important;
   width:100% !important;
   /* filter: brightness(50%); */
+}
+.cocktailApi{
+  background-color: transparent;
+  border: 2px white solid !important;
+  color: white;
+  box-shadow: 4px 5px 10px;
 }
 .parallax {
     /* The image used */
