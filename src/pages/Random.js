@@ -32,48 +32,60 @@ class Random extends React.Component<Props> {
   render(){
     return(
         <div className = "row randomDrinks">
-          <div  className="carousel slide" data-ride="carousel">
-            <div className="carousel-inner">
-          {this.state.drinks.map((drink,index)=>{
-            if(index === 0){
-              return(
-                <div key={index} className="carousel-item active">
-                  <div className = "container-fluid">
-                    <div className = "row">
-                    <div  className = "col-5">
-                      <img className= "d-block w-100" src = {drink.strDrinkThumb} alt={index}></img>
-                    </div>
-                    <div className = "col-7">
-                      <h2 className = "drinkName">{drink.strDrink}</h2>
-                      <h6>{drink.strAlcoholic}</h6>
+          <div className = "container-fluid">
+            <div className = "row text-center">
+              <div className = "col-12">
+                <h6 className = "text-center">Our today's special !! Just for your refreshment</h6>
+                <br></br>
+              </div>
+            </div>
+            <div className = "row">
+              <div className = "col-12 text-center">
+              <div  className="carousel slide" data-ride="carousel">
+                <div className="carousel-inner">
+              {this.state.drinks.map((drink,index)=>{
+                if(index === 0){
+                  return(
+                    <div key={index} className="carousel-item active">
+                      <div className = "container-fluid text-center">
+                        <div className = "row text-center">
+                        <div  className = "col-6 text-center">
+                          <img className= "carouselImg d-block w-100" src = {drink.strDrinkThumb} alt={index}></img>
+                        </div>
+                        <div className = "col-6">
+                          <h2 className = "drinkName">{drink.strDrink}</h2>
+                          <h6>{drink.strAlcoholic}</h6>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              )
-            }
-            else{
-              return(
-              <div key={index}  className="carousel-item">
-                <div className = "container-fluid">
-                  <div className = "row">
-                    <div className = "col-5">
-                      <img className= "d-block w-100" src = {drink.strDrinkThumb} alt={index}></img>
-                    </div>
-                    <div className = "col-7">
-                      <h2 className = "drinkName">{drink.strDrink}</h2>
-                      <h6>{drink.strAlcoholic}</h6>
+                  )
+                }
+                else{
+                  return(
+                  <div key={index}  className="carousel-item">
+                    <div className = "container-fluid">
+                      <div className = "row">
+                        <div className = "col-6">
+                          <img className= "carouselImg d-block w-100" src = {drink.strDrinkThumb} alt={index}></img>
+                        </div>
+                        <div className = "col-6">
+                          <h2 className = "drinkName">{drink.strDrink}</h2>
+                          <h6>{drink.strAlcoholic}</h6>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              )
-            }
-          })}
+                  )
+                }
+              })}
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
         </div>
-        </div>
-      </div>
-  )
+      )
 }
 }
 export default Random;
