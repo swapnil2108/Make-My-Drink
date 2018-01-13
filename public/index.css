@@ -9,7 +9,6 @@
     color: white;
     text-transform: bold;
     position: fixed; */
-
 }
 .about{
   width: 100%;
@@ -22,6 +21,11 @@
 }
 .WIMB{
   color: #007bff;
+}
+.card{
+  margin: 10px;
+  border: 2px solid black !important;
+  box-shadow: 10px 7px 15px;
 }
 /*  http://static3.businessinsider.com/image/5857f948dd0895bc1f8b4721/the-30-best-selling-cocktails-in-the-world-in-2016.jpg */
 .topImg{
